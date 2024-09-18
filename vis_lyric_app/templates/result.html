@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2つのHTMLを表示</title>
+</head>
+<body>
+    <h1>それぞれのテーマ特有の単語の使われ方を示す</h1>
+    <div style="display: flex;">
+        <div style="flex: 1; margin-right: 20px;">
+            <h2>{{ name1 }}</h2>
+            {{ content1 | safe }} 
+        </div>
+        <div style="flex: 1;">
+            <h2>{{ name2 }}</h2>
+            {{ content2 | safe }} 
+        </div>
+    </div>
+    
+</body>
+</html>
